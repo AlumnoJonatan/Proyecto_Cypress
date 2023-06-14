@@ -1,0 +1,17 @@
+###################################################### CSS ################################################
+
+Selectores CSS por ID: #ID
+Fortalecer el Selector CSS por ID con Input: input#ID
+Selectores CSS por Clase: .clase 
+Fortalecer el selector CSS por Clase: input.clase - textarea.clase  - etc
+Selectores CSS por Atributo: [atr='nombre']- Ej -> [type='text'] - [type='email']
+Selectores CSS por Atributos ID: input#ID[type='text'] - input#ID[type='email']
+
+###################################################### XPATH ################################################
+
+Selectores Xpath por Atributo: //button[@id='submit'] - //input[@id='ID']
+Selectores Xpath (AND y OR): //input[@id='userName' or @type='text'] - //input[@id='userName' and @type='text']
+Selectores Xpath por Texto: //div[text()='Text Box']
+Selectores Xpath por Texto p2: //span[text()='Dynamic Properties']
+Selectores Xpath función Contains: //span[contains(text(),'Box')] - //span[contains(text(),'Links')]
+Selectores Xpath por plugins: //span[@class='rct-checkbox']

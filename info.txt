@@ -1,0 +1,140 @@
+Bienvenidos al curso de cypress
+
+#Instalacion de la nueva versión
+Verificar si esta instalado node --> node --version o node -v
+
+1. TRaer packetes para cypress dentro del folder
+################################
+npm init 
+
+2. Comando para instalar Cypress
+#################################
+npm install cypress --save-dev 
+
+
+3. Extension
+##################################
+npm install -g npx  --> Instalar npx
+
+4. Iniciar la app
+##################################
+npx cypress open 
+node_modules\.bin\cypress open --> Levantar Cypress de otra forma
+
+
+####################################
+Paginas para test
+
+1. https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2. https://testingqarvn.com.es/contacto/ 
+3. https://computer-database.gatling.io/computers
+4. https://www.jqueryscript.net/demo/Efficient-Dual-List-Box-Plugin-with-jQuery-Bootstrap/
+5. https://practice.automationtesting.in/
+6. https://demo.seleniumeasy.com/table-pagination-demo.html
+7. https://testpages.herokuapp.com/styled/index.html
+8- https://demo.seleniumeasy.com/bootstrap-modal-demo.html
+
+########################################
+Instalación de xpath
+https://www.npmjs.com/package/cypress-xpath
+
+#########################################
+Correr test desde consola
+
+node_modules\.bin\cypress run
+npx cypress run
+
+Correr test en navegador
+
+npx cypress run --headed
+
+Especificando browser
+
+npx cypress run --browser chrome
+
+Correr test Especificando
+
+npx cypress run --spec "cypress\e2e\seccion_2\Asserts.cy.js"
+
+Correr test de una carpeta Especificando
+npx cypress run --spec "cypress\e2e\seccion_1\*"
+
+####################################################
+Plugin para subir archivos
+
+npm install --save-dev cypress-file-upload
+
+####################################################
+Info para git
+
+git status -s // Solo muestra los archivos modificados
+
+git add . // Agregar todos los archivos para que esté pendiente de los cambios
+
+git add nombreArchivo - *.xlsx // Subir un archivo especifico o archivos con extensión específica
+
+git reset *.mp4 // Quita los arhivos con extensión mp4 del repositorio
+
+git reset --soft id_commit // Regresa al commit indicado
+
+git reset --hard id_commit // hacia donde nos queremos mover
+
+git reflog // Nos trae todos los movimientos realizados
+
+git log --oneline //Muestra los commit y tag realizados
+
+git log --oneline --decorate --all --graph // Muestra los commit y tags de manera más gráfica
+
+git commit -m ""
+
+git push // Subir a la nube
+
+git pull // Trae los cambios desde la nube
+
+git tag versionAlpha -m "versión alpha" // Crea versiones de mi proyecto
+
+git push --tags //Subir los tags al proyecto
+
+git remote -v // Nos muestra en que repositorio estamos enlazados remotamente.
+
+git clone nombreCarpeta //Clonar el repositorio
+
+git branch -d nombreRama // Elimina una rama 
+
+git merge nombreRama // Nos movemos a la nueva rama
+
+Guía completa: https://bluuweb.github.io/tutorial-github/01-fundamentos/#ramas-o-branch 
+
+git rebase --abort // Comando para corregir
+
+git checkout -- . // Recuperar archivos perdidos
+
+####################################################
+Cargar Snippets en VSC
+
+1) Ctrl + P
+2) Ingresar > y tipear Snippets
+3) Seleccionar función y cargar snippets
+
+#####################################################
+Instalacion de Cucumber: https://github.com/badeball/cypress-cucumber-preprocessor
+
+1. Ejecutar: npm install @badeball/cypress-cucumber-preprocessor
+
+2. Instalar dentro del VSC: Cucumber (Gherkin)
+
+Video de Cucumber: https://www.youtube.com/watch?v=TGLQN3xEnaU
+
+######################################################
+Ingresar a Jenkins: http://localhost:8080/
+Apagar servidor: jenkins stop 
+Prenderlo: jenkins start 
+
+Plugins de Jenkins:
+ -Github Authrntication 
+ -Github Pull Request Builder 
+ -Github Organization Folder 
+ -Github Integration 
+ -Node JS 
+ -Green Balls
+ -Mock Agents
